@@ -20,6 +20,8 @@ nav {
     margin: 20px auto;
     align-items: center;
     font-weight: 550;
+    position: sticky;
+    z-index: 1;
 }
 
 .logo-area {
@@ -65,14 +67,13 @@ nav {
     transform: translateY(-50%);
 }
 
-#circle {
-    width: 1100px;
-    height: 1100px;
-    position: absolute;
-    background: #ccc;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 520px solid #fff;
+    border-right: 520px solid transparent;
+    border-bottom: 520px solid #fff;
+    border-left: 520px solid #fff;
 }
 
 .pc {
@@ -81,6 +82,18 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     left: 28%;
+    z-index: 1;
+}
+
+#circle {
+    width: 1100px;
+    height: 1100px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 1s;
 }
 
 .feature {
@@ -104,21 +117,25 @@ nav {
 .one {
     top: 500px;
     right: 100px;
+    transform: rotate(0deg);
 }
 
 .two {
-    top: 100px;
-    left: 340px;
+    top: 130px;
+    left: 372px;
+    transform: rotate(-90deg);
 }
 
 .three {
-    bottom: 450px;
-    left: 50px;
+    bottom: 500px;
+    left: 70px;
+    transform: rotate(180deg);
 }
 
 .four {
-    bottom: 150px;
-    right: 370px;
+    bottom: 175px;
+    right: 418px;
+    transform: rotate(90deg);
 }
 
 .control {
@@ -130,7 +147,7 @@ nav {
 }
 
 .control img {
-    width: 20px;
+    width: 40px;
 }
 
 .control h3 {
