@@ -5,8 +5,52 @@
 }
 
 .main {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to right, #7c527b, #cc3165);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    font-weight: 550;
+}
+
+.logo-area {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 15%;
+    height: 15%;
+    margin-right: 12px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 2rem;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #dae09e;
 }
