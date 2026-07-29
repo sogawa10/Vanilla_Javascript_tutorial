@@ -11,6 +11,7 @@
     height: 100vh;
     background: linear-gradient(to right, #7c527b, #cc3165);
     overflow: hidden;
+    position: relative;
 }
 
 nav {
@@ -53,4 +54,95 @@ nav {
 
 .nav-links a:hover {
     color: #dae09e;
+}
+
+.infomation {
+    width: 1100px;
+    height: 1100px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1100px;
+    height: 1100px;
+    position: absolute;
+    background: #ccc;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.pc {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 28%;
+}
+
+.feature {
+    display: flex;
+    position: absolute;
+    color: #fff;
+}
+
+.feature img {
+    width: 70px;
+}
+
+.feature div {
+    margin-left: 20px;
+}
+
+.feature a {
+    margin-top: 8px;
+}
+
+.one {
+    top: 500px;
+    right: 100px;
+}
+
+.two {
+    top: 100px;
+    left: 340px;
+}
+
+.three {
+    bottom: 450px;
+    left: 50px;
+}
+
+.four {
+    bottom: 150px;
+    right: 370px;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    text-align: center;
+}
+
+.control img {
+    width: 20px;
+}
+
+.control h3 {
+    margin: 20px 0;
+    color: #fff;
+}
+
+#upBtn {
+    cursor: pointer;
+}
+
+#downBtn {
+    cursor: pointer;
+    transform: rotate(180deg);
 }
